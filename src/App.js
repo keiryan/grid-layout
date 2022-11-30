@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Container, FlexBox, FlexRow } from "./styles.app.js";
+import { useState } from "react";
 
-function App() {
+export default function App() {
+  const [toggle, setToggle] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+
+      <FlexBox name="red" backgroundColor="red"></FlexBox>
+      <FlexBox name="white"></FlexBox>
+      <FlexBox name="pink" backgroundColor="pink"></FlexBox>
+
+      <FlexBox name="blue" backgroundColor="blue"></FlexBox>
+      <FlexBox name="orange" backgroundColor="orange"></FlexBox>
+
+    </Container>
   );
 }
-
-export default App;
