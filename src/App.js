@@ -1,19 +1,18 @@
 import "./App.css";
-import { Container, FlexBox, FlexRow } from "./styles.app.js";
-import { useState } from "react";
+import { Container, FlexBox } from "./styles.app.js";
 
 export default function App() {
-  const [toggle, setToggle] = useState(false);
   return (
     <Container>
+      <FlexBox backgroundColor="red"></FlexBox>
+       {/* Default color is white */}
+      <FlexBox></FlexBox>
+      <FlexBox backgroundColor="pink"></FlexBox>
 
-      <FlexBox name="red" backgroundColor="red"></FlexBox>
-      <FlexBox name="white"></FlexBox>
-      <FlexBox name="pink" backgroundColor="pink"></FlexBox>
-
-      <FlexBox name="blue" backgroundColor="blue"></FlexBox>
-      <FlexBox name="orange" backgroundColor="orange"></FlexBox>
-
+      <FlexBox backgroundColor="blue"></FlexBox>
+      <FlexBox backgroundColor="orange"></FlexBox>
+      <FlexBox backgroundColor="lightblue"></FlexBox>
+      <FlexBox backgroundColor="deeppink"></FlexBox>
     </Container>
   );
 }
