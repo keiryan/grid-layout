@@ -10,11 +10,9 @@ export const Container = styled(Base)`
   background-color: #000;
   gap: 0.6rem;
   flex-wrap: wrap;
-`;
-
-export const FlexRow = styled(Base)`
-  flex: 1;
-  gap: 0.6rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const FlexBox = styled(Base)`
