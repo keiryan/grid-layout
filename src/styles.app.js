@@ -5,13 +5,8 @@ export const Base = styled.div`
 `;
 
 export const Container = styled(Base)`
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   background-color: #000;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
 `;
-
