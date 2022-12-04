@@ -15,13 +15,3 @@ export const Container = styled(Base)`
   }
 `;
 
-export const FlexBox = styled(Base)`
-  flex: 1;
-  min-width: 25%;
-  background-color: ${(props) => props.backgroundColor || "#fff"};
-  transition: all 0.3s ease-in-out;
-  :hover {
-    cursor: pointer;
-    flex-grow: 2;
-  }
-`;
