@@ -5,5 +5,3 @@ __*(soon to be re-engineered)*__
 🧑‍💻 Live demo here: https://grid-layout-tawny.vercel.app/
 
 ⚙️ Live code here: https://githubbox.com/keiryan/grid-layout
-
-:)
